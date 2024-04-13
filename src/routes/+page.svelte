@@ -56,7 +56,7 @@
 
 <div class="container md:flex w-full h-full mx-auto justify-center items-center py-10 p-5 px-5 home-card">
 	<div class="mx-auto relative">
-		<img class="w-80 rounded-lg border-gray-300 border-2 profile-image " alt="avatar" src="https://cdn.discordapp.com/avatars/{user.id}/{user.avatar}" />
+		<img class="w-72 rounded-lg border-gray-300 border-2 profile-image " alt="avatar" src="https://cdn.discordapp.com/avatars/{user.id}/{user.avatar}" />
 		<img class="rounded-lg absolute top-2.5 left-2.5 w-[calc(100%-30px)] h-[calc(100%-30px)]" alt="avatar" src="https://cdn.discordapp.com/avatars/{user.id}/{user.avatar}" />
 	</div>
 

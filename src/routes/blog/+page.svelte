@@ -23,11 +23,11 @@
 
 	{#each data.posts as post, i} 
 	<a href={`/blog/${post.slug.current}`}>
-		<div class="home-card py-5 my-5 flex hover:border-slate-700 hover:shadow-xl">
+		<div class="home-card m-5 py-5 my-5 md:flex hover:border-slate-700 hover:shadow-xl">
 			<div class="rounded-lg">
-				<img src={urlFor(post.mainImage).url()} class="rounded-lg  w-[20rem]" />
+				<img src={urlFor(post.mainImage).url()} class="rounded-lg  md:w-[20rem]" />
 			</div>
-			<div class="ml-5 text-left text-4xl w-1/2">
+			<div class="md:ml-5 md:text-left text-2xl md:text-4xl md:w-1/2">
 				<div class="py-2">
 				  {post.title}
 				</div>
