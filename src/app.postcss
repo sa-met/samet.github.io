@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer components {
+	.home-card {
+		@apply p-4 rounded-xl glassy;
+	}
+}
+
+.glassy {
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(77, 66, 66, 0.3);
+}
+
+/* Pre and Code Blocks */
+pre:not([class*="language-"]) {
+  @apply glassy;
+  @apply rounded-lg;
+  @apply overflow-auto;
+  @apply tabular-nums;
+}
+
+pre[class*="language-"] {
+  @apply bg-transparent;
+  @apply rounded-md;
+  @apply overflow-auto;
+  @apply tabular-nums;
+}
+
+/* Inline Code */
+:not(pre) > code[class*="language-"] {
+  @apply bg-transparent;
+  @apply rounded-md;
+  @apply whitespace-normal;
+  
+}
+
+/* Tokens */
+.token {
+  @apply font-mono;
+  @apply whitespace-pre;
+}
+
+/* Comment, Punctuation, etc. */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6a737d;
+}
+
+.token.punctuation {
+  color: #999999;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol {
+  color: #795e26;
+}
+
+.token.boolean,
+.token.number {
+  color: #d73a49;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #032f62;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+  color: #d73a49;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+  color: #6f42c1;
+}
+
+.token.keyword {
+  color: #005cc5;
+}
+
+.token.regex {
+  color: #032f62;
+  font-weight: bold;
+}
+
+/* Line Highlight */
+.line-highlight {
+  background-color: rgba(183, 134, 11, 0.075);
+  border-top: 1px solid #b7860b;
+  border-bottom: 1px solid #b7860b;
+}
+
+/* Line Numbers */
+.line-numbers .line-numbers-rows {
+  border-right: 1px solid #b7860b;
+}
+
+.line-numbers-rows > span:before {
+  color: #b7860b;
+}
+
+/* Media Query for High Contrast Mode */
+@media screen and (-ms-high-contrast: active) {
+  code[class*='language-'],
+  pre[class*='language-'] {
+    color: windowText;
+    background-color: window;
+  }
+
+  :not(pre) > code[class*='language-'],
+  pre[class*='language-'] {
+    background-color: window;
+  }
+
+  .token.regex {
+    background-color: highlight;
+    color: window;
+    font-weight: normal;
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.function,
+  .token.keyword,
+  .token.operator,
+  .token.selector {
+    font-weight: bold;
+  }
+
+  .token.attr-value,
+  .token.comment,
+  .token.doctype,
+  .token.function,
+  .token.keyword,
+  .token.operator,
+  .token.property,
+  .token.string {
+    color: highlight;
+  }
+
+  .token.attr-value,
+  .token.url {
+    font-weight: normal;
+  }
+}
