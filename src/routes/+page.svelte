@@ -62,7 +62,7 @@
 
 	<div class="md:w-1/2 mt-5">
 		<h2 class="text-4xl">Hey, I'm {user.username}👋</h2>
-		<h3 class="text-sm text-black dark:text-gray-300 leading-6 font-light tracking-wide ml-2 mt-5 md:mt-5 md:ml-0 md:w-[25rem]"> I'm Samet, a self-taught software engineer from Turkey, currently residing in the United States. At 21 years old, I've embarked on a journey into the world of technology, fueled by my passion for coding, gaming, and sports. Today, I'm here to share my story of growth and learning in the field of full-stack web development.</h3>
+		<h3 class="text-sm text-black dark:text-gray-300 leading-6 font-light tracking-wide ml-2 mt-5 md:mt-5 md:ml-0 md:w-[25rem]"> I'm Samet, a self-taught software engineer from Turkey. At 21 years old, I've embarked on a journey into the world of technology, fueled by my passion for coding, gaming, and sports. Today, I'm here to share my story of growth and learning in the field of full-stack web development.</h3>
 	</div>
 </div>
 	{#if data.lanyardResponse.data.listening_to_spotify}
